@@ -30,4 +30,35 @@ class RoomController extends Controller
             );
         }
     }
+
+    public function postRoom(Request $request)
+    {
+        try{
+            $room = new Room;
+            $room->name = $request->input('name');
+            $room->description = $request->input('description');
+            $room->game_id =$request->input('game_id');
+    
+            $room->save();
+
+            return response()->json(
+                [
+                    "success" => true,
+                    "message" => "Room created successfully",
+                    "data" => $room
+                ],
+                200
+            );
+        } catch (\Throwable $th) {
+            return response()->json(
+                [
+                    "success" => false,
+                    "message" => "Room cant be created",
+                    "error" => $th->getMessage()
+                ],
+                500
+            );
+        }
+
+    }
 }
