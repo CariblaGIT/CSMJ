@@ -100,4 +100,29 @@ class RoomController extends Controller
             );
         }
     }
+
+    public function deleteRoom($id)
+    {
+        try {
+            $roomDeleted = Room::destroy($id);
+
+            return response()->json(
+                [
+                    "success" => true,
+                    "message" => "Room deleted successfully",
+                    "data" => $roomDeleted   
+                ],
+                200
+            );
+        } catch (\Throwable $th) {
+            return response()->json(
+                [
+                    "success" => false,
+                    "message" => "Room cant be deleted",
+                    "error" => $th->getMessage()
+                ],
+                500
+            );
+        }
+    }
 }
