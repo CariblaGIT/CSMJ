@@ -59,6 +59,45 @@ class RoomController extends Controller
                 500
             );
         }
+    }
 
+    public function putRoom(Request $request, $id)
+    {
+        try {
+            $roomId = $id;
+
+            $roomName = $request->input('name');
+            $roomDescription = $request->input('description');
+    
+            $room = Room::find($roomId);
+    
+            if($roomName) {
+                $room->name = $roomName;
+            }
+            
+            if( $roomDescription) {
+                $room->description = $roomDescription;
+            }    
+    
+            $room->save();
+    
+            return response()->json(
+                [
+                    "success" => true,
+                    "message" => "room modified successfully",
+                    "data" => $room
+                ],
+                200
+            );
+        } catch(\Throwable $th) {
+            return response()->json(
+                [
+                    "success" => false,
+                    "message" => "Room cant be updated",
+                    "error" => $th->getMessage()
+                ],
+                500
+            );
+        }
     }
 }
