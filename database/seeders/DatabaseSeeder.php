@@ -50,6 +50,13 @@ class DatabaseSeeder extends Seeder
         //     ]
         // ]);
 
+        // DB::table('users_rooms')->insert([
+        //     [
+        //         'user_id' => rand(1, 10),
+        //         'room_id' => rand(1, 10),
+        //     ]
+        // ]);
+
         \App\Models\Message::factory(10)->create();
     }
 }
