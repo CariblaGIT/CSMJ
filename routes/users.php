@@ -12,6 +12,9 @@ Route::get('/users', [UserController::class, 'getAllUsers']);
 //     return 'GET ALL USERS';
 // });
 
+
+Route::get('/users/profile/', [UserController::class, 'getUserProfile'])->middleware('auth:sanctum');
+
 // Route::put('/users/{id}', [UserController::class, 'putUser']);
 Route::put('/users/{id}', function($id){
     return 'update USER' .$id;
