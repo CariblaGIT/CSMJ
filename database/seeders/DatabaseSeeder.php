@@ -20,11 +20,5 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory()->admin()->create();
         \App\Models\User::factory(19)->create();
         \App\Models\Game::factory(10)->create();
-        // DB::table('users')->insert([
-        //     'role' => 'user',
-        //     'name' => Str::random(10),
-        //     'email' => Str::random(10) . '@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
     }
 }
