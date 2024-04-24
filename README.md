@@ -1,4 +1,10 @@
-<h1 align="center"> PROJECT BACKEND LARAVEL: VIDEOGAME SOCIAL NETWORK </h1>
+<h1 align="center"> PROJECT BACKEND LARAVEL: GAMELOBBY </h1>
+
+<p align="center">
+  <img src="./public/img/title_Readme.gif" alt="Demostración de funcionalidad">
+</p>
+
+
 
 
 
@@ -7,15 +13,15 @@
 1. [Description :classical_building:](#description-classical_building)
 2. [Stack :gear:](#stack-gear)
 3. [Project :open_book:](#Project-open_book)
-4. [Future functionalities :star2:](#Future-functionalities-star2)
-5. [Link :dart:](#link-dart)
-6. [Authors :wave:](#author-wave)
+4. [Link :dart:](#link-dart)
+5. [Authors :wave:](#author-wave)
 
 
 ---
 
 ## Description :classical_building:
 
+"Welcome to GameLobby, the ultimate hub for gamers to unite and play! 🎮 Dive into our dynamic social network tailored for gaming aficionados. Create custom gaming rooms linked to your favorite titles and spark conversations that evolve into epic multiplayer battles. Whether you're strategizing for the next raid or sharing tips for the latest release, GameLobby is your virtual playground for gaming greatness. Level up your social gaming experience today!"
 
 ---
 
@@ -101,12 +107,6 @@ role: "super_admin"
 
 
 
-
-
-## Future functionalities :star2:
-
-
-
 ---
 
 ## Link :dart:
@@ -116,6 +116,10 @@ role: "super_admin"
 ---
 
 ## Authors :wave:
+
+<p align="center">
+  <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
+</p>
 
 
 
