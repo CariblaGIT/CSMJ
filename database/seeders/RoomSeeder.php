@@ -34,6 +34,6 @@ class RoomSeeder extends Seeder
                 'game_id' => $gameId
             ],
         ]);
-
+        \App\Models\Room::factory(10)->create();
     }
 }
