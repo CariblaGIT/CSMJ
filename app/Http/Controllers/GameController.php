@@ -27,13 +27,9 @@ class GameController extends Controller
 
     public function postGame (Request $req){
         try {
-            $game = new Game;
+            $gameData = $req->only(['name', 'description', 'image']);
 
-            $game->name = $req->input('name');
-            $game->description = $req->input('description');
-            $game->image = $req->input('image');
-
-            $game->save();
+            $game = Game::create($gameData);
 
             return response()->json([
                 "success" => true,
@@ -54,9 +50,6 @@ class GameController extends Controller
             $game = Game::find($id);
 
             $updateData = $req->only(['name', 'description', 'image']);
-            // $new_name = $req->input('name');
-            // $new_description = $req->input('description');
-            // $new_image = $req->input('image');
 
             $game->update($updateData);
 
