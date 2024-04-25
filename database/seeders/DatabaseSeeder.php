@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        \App\Models\User::factory()->admin()->create();
-        \App\Models\User::factory(19)->create();
-        \App\Models\Game::factory(10)->create();
+    {    
+        $this->call([
+            UserSeeder::class
+        ]);
     }
 }
