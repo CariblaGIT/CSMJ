@@ -27,6 +27,7 @@
 
 ## Stack :gear:
 
+![Static Badge](https://img.shields.io/badge/Laravel-red?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/PHP-lightblue?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/MYSQL-blue?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/DOCKER-blue?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/GIT-orange?style=for-the-badge) ![Static Badge](https://img.shields.io/badge/GITHUB-black?style=for-the-badge)
 
 ---
 
@@ -40,6 +41,8 @@
 - `composer install`.
 - Fill .env with data on .env.sample.
 - `composer artisan serve`.
+- Open docker container and MySql
+- `php artisan migrate --seed`.
 
 
 ### 2 - Info to log
@@ -75,42 +78,103 @@ role: "super_admin"
 
 2. User:
 
-- Get users:
-
-
-
+- Get all users:
 
 <image src="" alt="">
 
-- Get users profile:
-
-
+- Get me:
 
 <image src="" alt="">
 
-- Put user profile:
-
-
-
+- Put user:
 
 <image src="" alt="">
 
--Delete user :
-
-
-
+- Delete user :
 
 <image src="" alt="">
 
 
+3. Games:
+
+- Get all games:
+
+<image src="" alt="">
+
+- Post game:
+
+<image src="" alt="">
+
+- Put game:
+
+<image src="" alt="">
+
+- Delete game:
+
+<image src="" alt="">
 
 
+4. Rooms:
 
+- Get all rooms:
+
+<image src="" alt="">
+
+- Post room:
+
+<image src="" alt="">
+
+- Put room:
+
+<image src="" alt="">
+
+- Delete room:
+
+<image src="" alt="">
+
+
+5. Messages:
+
+- Get all messages: 
+
+<image src="" alt="">
+
+- Post message:
+
+<image src="" alt="">
+
+- Put message:
+
+<image src="" alt="">
+
+- Delete message:
+
+<image src="" alt="">
+
+
+6. User-Room:
+
+- Get user-room:
+
+<image src="" alt="">
+
+- Post user-room:
+
+<image src="" alt="">
+
+- Put user-room:
+
+<image src="" alt="">
+
+- Delete user-room: 
+
+<image src="" alt="">
 
 ---
 
 ## Link :dart:
 
+https://github.com/CariblaGIT/CSMJ.git
 
 
 ---
@@ -120,6 +184,4 @@ role: "super_admin"
 <p align="center">
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
-
-
 
