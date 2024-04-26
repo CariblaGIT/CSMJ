@@ -64,27 +64,39 @@ role: "super_admin"
 
 - Register:
 
+```
+localhost:8000/api/register
+```
 
-
-<image src="" alt="">
+<image src="./public/img/register.png" alt="register">
 
 - Log.
 
+```
+localhost:8000/api/login
+```
 
 
-
-<image src="" alt="">
+<image src="./public/img/login.png" alt="login">
 
 
 2. User:
 
 - Get all users:
 
-<image src="" alt="">
+```
+localhost:8000/api/users
+```
 
-- Get me:
+<image src="./public/img/getallusers.png" alt="GetAllUsers">
 
-<image src="" alt="">
+- Get profile:
+
+```
+localhost:8000/api/users/profile
+```
+
+<image src="./public/img/getuserprofile.png" alt="GetProfile">
 
 - Put user:
 
@@ -99,38 +111,70 @@ role: "super_admin"
 
 - Get all games:
 
-<image src="" alt="">
+```
+localhost:8000/api/games
+```
+
+<image src="./public/img/getallgames.png" alt="GetAllGames">
 
 - Post game:
 
-<image src="" alt="">
+```
+localhost:8000/api/games
+```
+
+<image src="./public/img/postgame.png" alt="PostGame">
 
 - Put game:
 
-<image src="" alt="">
+```
+localhost:8000/api/games/{id}
+```
+
+<image src="./public/img/putgame.png" alt="PutGame">
 
 - Delete game:
 
-<image src="" alt="">
+```
+localhost:8000/api/games/{id}
+```
+
+<image src="./public/img/deletegame.png" alt="DeleteGame">
 
 
 4. Rooms:
 
 - Get all rooms:
 
-<image src="" alt="">
+```
+localhost:8000/api/rooms
+```
+
+<image src="./public/img/getallrooms.png" alt="GetAllRooms">
 
 - Post room:
 
-<image src="" alt="">
+```
+localhost:8000/api/games
+```
+
+<image src="./public/img/postroom.png" alt="PostRoom">
 
 - Put room:
 
-<image src="" alt="">
+```
+localhost:8000/api/rooms/{id}
+```
+
+<image src="./public/img/putroom.png" alt="">
 
 - Delete room:
 
-<image src="" alt="">
+```
+localhost:8000/api/rooms/{id}
+```
+
+<image src="./public/img/deleteroom.png" alt="DeleteRoom">
 
 
 5. Messages:
@@ -185,3 +229,4 @@ https://github.com/CariblaGIT/CSMJ.git
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
+[<i class="fab fa-github"></i> Sergio](https://github.com/SergioTorresGarcia) [<i class="fab fa-github"></i> Marta](https://github.com/MartaGBayona) [<i class="fab fa-github"></i> Carlos](https://github.com/CariblaGIT)  [<i class="fab fa-github"></i> Jose](https://github.com/jluisferrer)
