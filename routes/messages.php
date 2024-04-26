@@ -6,8 +6,12 @@ use Illuminate\Support\Facades\Route;
 
 //MESSAGES
 
-Route::get('/messages', [MessageController::class, 'getAllMyMessages']);
-Route::get('/messages/{room}', [MessageController::class, 'getAllRoomMessages']);
-Route::post('/messages', [MessageController::class, 'postMessage']);
-Route::put('/messages/{id}', [MessageController::class, 'updateMessageById']);
-Route::delete('/messages/{id}', [MessageController::class, 'deleteMessageById']);
+Route::group([
+    'middleware' => ['auth:sanctum']
+], function () {
+    Route::get('/messages', [MessageController::class, 'getAllMyMessages']);
+    Route::get('/messages/{room}', [MessageController::class, 'getAllRoomMessages']);
+    Route::post('/messages', [MessageController::class, 'postMessage']);
+    Route::put('/messages/{id}', [MessageController::class, 'updateMessageById']);
+    Route::delete('/messages/{id}', [MessageController::class, 'deleteMessageById']);
+});
