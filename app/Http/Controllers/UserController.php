@@ -56,4 +56,29 @@ class UserController extends Controller
             );
         }
     }
+
+    public function deleteUser($id){
+    try {
+        $user = User::findOrFail($id);
+
+        if ($user->role === 'super_admin') {
+            return response()->json([
+                'success' => false,
+                'message' => 'You do not have permission to remove a super_admin'
+            ], 403);
+        };
+        $user->delete();
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Successfully deleted user'
+        ], 200);
+    } catch (\Throwable $th) {
+        return response()->json([
+            'success' => false,
+            'message' => 'Could not delete user',
+            'error' => $th->getMessage()
+        ], 500);
+    }
+    }
 }
