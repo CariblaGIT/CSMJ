@@ -92,6 +92,8 @@ localhost:8000/api/login
 
 - Get all users:
 
+Only super_admin can get all users
+
 ```
 localhost:8000/api/users
 ```
@@ -99,6 +101,8 @@ localhost:8000/api/users
 <image src="./public/img/getallusers.png" alt="GetAllUsers">
 
 - Get profile:
+
+Need user logging
 
 ```
 localhost:8000/api/users/profile
@@ -108,12 +112,16 @@ localhost:8000/api/users/profile
 
 - Delete user :
 
-<image src="" alt="">
+Only super_admin can delete users
+
+<image src="./public/img/deleteuser.png" alt="DeleteUser">
 
 
 3. Games:
 
 - Get all games:
+
+Need user logging
 
 ```
 localhost:8000/api/games
@@ -123,6 +131,8 @@ localhost:8000/api/games
 
 - Post game:
 
+Only super_admin can post game
+
 ```
 localhost:8000/api/games
 ```
@@ -131,6 +141,8 @@ localhost:8000/api/games
 
 - Put game:
 
+Only super_admin can update game
+
 ```
 localhost:8000/api/games/{id}
 ```
@@ -138,6 +150,8 @@ localhost:8000/api/games/{id}
 <image src="./public/img/putgame.png" alt="PutGame">
 
 - Delete game:
+
+Only super_admin can delete game
 
 ```
 localhost:8000/api/games/{id}
@@ -150,6 +164,8 @@ localhost:8000/api/games/{id}
 
 - Get all rooms:
 
+Need user logging
+
 ```
 localhost:8000/api/rooms
 ```
@@ -157,6 +173,8 @@ localhost:8000/api/rooms
 <image src="./public/img/getallrooms.png" alt="GetAllRooms">
 
 - Post room:
+
+Need user logging
 
 ```
 localhost:8000/api/rooms
@@ -166,6 +184,8 @@ localhost:8000/api/rooms
 
 - Put room:
 
+Need user logging
+
 ```
 localhost:8000/api/rooms/{id}
 ```
@@ -173,6 +193,8 @@ localhost:8000/api/rooms/{id}
 <image src="./public/img/putroom.png" alt="">
 
 - Delete room:
+
+Need user logging
 
 ```
 localhost:8000/api/rooms/{id}
@@ -183,36 +205,52 @@ localhost:8000/api/rooms/{id}
 
 5. Messages:
 
-- Get all messages: 
+- Get all room messages: 
 
-<image src="" alt="">
+Need user logging
+
+<image src="./public/img/getallroommessages.png" alt="GetAllRoomMessages">
+
+- Get all my messages:
+
+Need user logging
+
+<image src="./public/img/getallmymessages.png" alt="GetAllMyMessages">
 
 - Post message:
 
-<image src="" alt="">
+Need user logging
+
+<image src="./public/img/postmessages.png" alt="PostMessage">
 
 - Put message:
 
-<image src="" alt="">
+Need user logging
+
+<image src="./public/img/putmessages.png" alt="PutMessage">
 
 - Delete message:
 
-<image src="" alt="">
+Need user logging
+
+<image src="./public/img/deletemessage.png" alt="DeleteMessage">
 
 
 6. User-Room:
 
 - Get user-room:
 
-<image src="" alt="">
+<image src="./public/img/getuserrooms.png" alt="GetUserRoom">
 
 - Post user-room:
 
-<image src="" alt="">
+Need user logging
+
+<image src="./public/img/postuserroom.png" alt="PostUserRoom">
 
 - Delete user-room: 
 
-<image src="" alt="">
+<image src="./public/img/deleteuserroom.png" alt="DeleteUserRoom">
 
 ---
 
