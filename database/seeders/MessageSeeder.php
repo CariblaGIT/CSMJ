@@ -18,8 +18,13 @@ class MessageSeeder extends Seeder
         DB::table('messages')->insert([
             [
                 'content' => fake()->sentence(),
+                'user_id' => "1",
+                'room_id' => "3",
+            ],
+            [
+                'content' => fake()->sentence(),
                 'user_id' => "2",
-                'room_id' => "1",
+                'room_id' => "2",
             ],
             [
                 'content' => fake()->sentence(),
@@ -28,11 +33,21 @@ class MessageSeeder extends Seeder
             ],
             [
                 'content' => fake()->sentence(),
-                'user_id' => "1",
-                'room_id' => "3",
+                'user_id' => "9",
+                'room_id' => "1",
+            ],
+            [
+                'content' => fake()->sentence(),
+                'user_id' => "7",
+                'room_id' => "1",
+            ],
+            [
+                'content' => fake()->sentence(),
+                'user_id' => "6",
+                'room_id' => "2",
             ]
         ]);
 
-        \App\Models\Message::factory(10)->create();
+        // \App\Models\Message::factory(10)->create();
     }
 }

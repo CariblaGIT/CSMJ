@@ -109,8 +109,7 @@ class RoomController extends Controller
             return response()->json(
                 [
                     "success" => true,
-                    "message" => "Room deleted successfully",
-                    "data" => $roomDeleted   
+                    "message" => "Room deleted successfully"
                 ],
                 200
             );

@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
-            $table->enum('role', ['super_admin', 'user'])->default('user');
             $table->string('name');
             $table->text('description');
             $table->timestamps();

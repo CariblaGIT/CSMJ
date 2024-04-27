@@ -30,14 +30,15 @@ class RoomuserController extends Controller
     public function postRelation(Request $request)
     {
         try {
+            $userId = auth()->user()->id;
+
             $request->validate([
-                'user_id' => 'required',
                 'room_id' => 'required'
             ]);
 
             $relation = new Roomuser();
             $relation->room_id = $request->input('room_id');
-            $relation->user_id = $request->input('user_id');
+            $relation->user_id = $userId;
 
             $relation->save();
 
@@ -63,8 +64,7 @@ class RoomuserController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Relation deleted successfuly',
-                'data' => $relationDeleted
+                'message' => 'Relation deleted successfuly'
             ], 200);
         } catch (\Throwable $th) {
             return response()->json([

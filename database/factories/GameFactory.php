@@ -18,7 +18,7 @@ class GameFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'description' => fake()->paragraph(),
+            'description' => fake()->sentence(),
             'image' => fake()->text()
         ];
     }

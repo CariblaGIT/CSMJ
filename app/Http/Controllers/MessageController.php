@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Message;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class MessageController extends Controller
 {
@@ -57,7 +58,6 @@ class MessageController extends Controller
 
             $request->validate([
                 'content' => 'required',
-                'user_id' => 'required',
                 'room_id' => 'required'
             ]);
 
@@ -87,29 +87,25 @@ class MessageController extends Controller
     {
         try {
             $userId = auth()->user()->id;
-            $message = Message::find($id)->get();
+            $message = Message::where([['id', $id],['user_id', $userId]])->first();
 
             $request->validate([
-                'content' => 'required',
-                'room_id' => 'required',
-                'user_id' => 'required'
+                'content' => 'required'
             ]);
 
             $message->content = $request->input('content');
-            $message->room_id = $request->input('room_id');
-            $message->user_id = $userId;
 
             $message->save();
 
             return response()->json([
                 'success' => true,
-                'message' => 'Message created successfuly',
+                'message' => 'Message updated successfuly',
                 'data' => $message
             ], 200);
         } catch (\Throwable $th) {
             return response()->json([
                 'success' => false,
-                'message' => 'Message couldn´t be created successfuly',
+                'message' => 'Message couldn´t be updated successfuly',
                 'data' => $th->getMessage()
             ], 500);
         }
@@ -122,8 +118,7 @@ class MessageController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Message deleted successfuly',
-                'data' => $messageDeleted
+                'message' => 'Message deleted successfuly'
             ], 200);
         } catch (\Throwable $th) {
             return response()->json([

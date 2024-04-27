@@ -27,9 +27,21 @@ class RoomuserSeeder extends Seeder
             [
                 'user_id' => "3",
                 'room_id' => "2",
+            ],
+            [
+                'user_id' => "9",
+                'room_id' => "1",
+            ],
+            [
+                'user_id' => "7",
+                'room_id' => "1",
+            ],
+            [
+                'user_id' => "6",
+                'room_id' => "2",
             ]
         ]);
 
-        \App\Models\Roomuser::factory(10)->create();
+        // \App\Models\Roomuser::factory(10)->create();
     }
 }
