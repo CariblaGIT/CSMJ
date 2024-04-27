@@ -260,30 +260,9 @@ Need user logging
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
-<div style="display: flex; flex-direction: row; justify-content: space-around;">
-  <div style="text-align: center;">
-    <img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>
-    <br>
-    <a href="https://github.com/SergioTorresGarcia">Sergio Torres</a>
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/MartaGBayona.png" width="60px;"/>
-    <br>
-    <a href="https://github.com/MartaGBayona">Marta Gimeno</a>
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/CariblaGIT.png" width="60px;"/>
-    <br>
-    <a href="https://github.com/CariblaGIT">Carlos Ibañez</a>
-  </div>
-  <div style="text-align: center;">
-    <img src="https://github.com/jluisferrer.png" width="60px;"/>
-    <br>
-    <a href="https://github.com/jluisferrer">Jose Ferrer</a>
-  </div>
-</div>
-
-
+  |<img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>|<img src="https://github.com/MartaGBayona.png" width="60px;"/>|<img src="https://github.com/CariblaGIT.png" width="60px;"/>|<img src="https://github.com/jluisferrer.png" width="60px;"/>|
+  |------------|------------|------------|------------|
+  |<a href="https://github.com/SergioTorresGarcia">Sergio Torres</a>|<a href="https://github.com/MartaGBayona">Marta Gimeno</a>|<a href="https://github.com/CariblaGIT">Carlos Ibañez</a>|<a href="https://github.com/jluisferrer">Jose Ferrer</a>|
 
 ---
 
