@@ -260,28 +260,29 @@ Need user logging
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
-<div style="display: flex; flex-direction:row; justify-content: space-around;">
-  <div style="display: flex; flex-direction: column; align-items: center">
+<div style="display: flex; justify-content: space-around;">
+  <div style="text-align: center;">
     <img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>
     <br>
     <a href="https://github.com/SergioTorresGarcia">Sergio Torres</a>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center">
+  <div style="text-align: center;">
     <img src="https://github.com/MartaGBayona.png" width="60px;"/>
     <br>
     <a href="https://github.com/MartaGBayona">Marta Gimeno</a>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center">
+  <div style="text-align: center;">
     <img src="https://github.com/CariblaGIT.png" width="60px;"/>
     <br>
     <a href="https://github.com/CariblaGIT">Carlos Ibañez</a>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center">
+  <div style="text-align: center;">
     <img src="https://github.com/jluisferrer.png" width="60px;"/>
     <br>
     <a href="https://github.com/jluisferrer">Jose Ferrer</a>
   </div>
 </div>
+
 
 ---
 
