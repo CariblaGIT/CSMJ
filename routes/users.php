@@ -15,6 +15,4 @@ Route::put('/users/{id}', function($id){
     return 'update USER' .$id;
 });
 
-Route::delete('/users/{id}', function($id){
-    return 'delete USER' .$id;
-});
+Route::delete('/users/{id}', [UserController::class, 'deleteUser'])->middleware('auth:sanctum', 'super_admin');
