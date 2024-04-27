@@ -260,7 +260,7 @@ Need user logging
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
-<div style="display: flex; justify-content: space-around;">
+<div style="display: flex; flex-direction:row; justify-content: space-around;">
   <div style="display: flex; flex-direction: column; align-items: center">
     <img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>
     <br>
