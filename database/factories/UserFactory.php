@@ -26,15 +26,16 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
         ];
     }
+    
     public function admin()
-{
-    return $this->state(function (array $attributes) {
-        return [
-            'role' => 'super_admin',
-            'password'=>bcrypt('admin1234'), //super_admin
-        ];
-    });
-}
+    {
+        return $this->state(function (array $attributes) {
+            return [
+                'role' => 'super_admin',
+                'password'=>bcrypt('admin1234'), //super_admin
+            ];
+        });
+    }
     
     /**
      * Indicate that the model's email address should be unverified.
