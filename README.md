@@ -10,7 +10,7 @@
 1. [Description :classical_building:](#description-classical_building)
 2. [Stack :gear:](#stack-gear)
 3. [Project :open_book:](#Project-open_book)
-4. [Authors :wave:](#author-wave)
+4. [Authors :wave:](#authors-wave)
 
 ---
 
@@ -260,7 +260,7 @@ Need user logging
   <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
-<div style="display: flex; justify-content: space-around;">
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
   <div style="text-align: center;">
     <img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>
     <br>
@@ -282,6 +282,7 @@ Need user logging
     <a href="https://github.com/jluisferrer">Jose Ferrer</a>
   </div>
 </div>
+
 
 
 ---
