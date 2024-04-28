@@ -1,64 +1,283 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 align="center"> PROJECT BACKEND LARAVEL: GAMELOBBY </h1>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="./public/img/title_Readme.gif" alt="Demostración de funcionalidad">
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents :file_folder:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. [Description :classical_building:](#description-classical_building)
+2. [Stack :gear:](#stack-gear)
+3. [Project :open_book:](#Project-open_book)
+4. [Authors :wave:](#authors-wave)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Description :classical_building:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Welcome to GameLobby, the ultimate hub for gamers to unite and play! 🎮 Dive into our dynamic social network tailored for gaming fans. Create custom gaming rooms linked to your favorite titles and spark conversations that evolve into epic multiplayer battles. Whether you're strategizing for the next raid or sharing tips for the latest release, GameLobby is your virtual playground for gaming greatness. Level up your social gaming experience today!
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Stack :gear:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<div align="center">
+<img src= "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white"/>
+<img src= "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img src= "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src= "https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src= "https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"/>
+</div>
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Project :open_book:
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 1 - Local Installation:
 
-## Code of Conduct
+- Clone repository.
+- Install all the dependencies on the project
+```bash
+  composer install
+```
+- Fill .env with data on .env.sample, specifically the variables related with DB.
+- Open docker container and MySql Workbench that you have created for the project with the data given into .env
+- Create and fill the tables
+```bash
+php artisan migrate --seed
+```
+- Launch the api for using the methods 
+```bash
+composer artisan serve
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 2 - Info to log
 
-## Security Vulnerabilities
+- Super_admin:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```json
 
-## License
+  _id: 1,
+  name: "SuperAdmin",
+  email: "superadmin@superadmin.com",
+  password: "admin1234",
+  role: "super_admin"
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+
+- User:
+
+```json
+
+  _id: 2,
+  name: "User",
+  email: "user@user.com",
+  password: "123456",
+  role: "user"
+
+```
+
+### 2 - Enpoints:
+
+1. Register and Login:
+
+- Register:
+
+```
+localhost:8000/api/register
+```
+
+<image src="./public/img/register.png" alt="register">
+
+- Login:
+
+```
+localhost:8000/api/login
+```
+
+<image src="./public/img/login.png" alt="login">
+
+
+2. User:
+
+- Get all users:
+
+Only super_admin can get all users
+
+```
+localhost:8000/api/users
+```
+
+<image src="./public/img/getallusers.png" alt="GetAllUsers">
+
+- Get profile:
+
+Need user logging
+
+```
+localhost:8000/api/users/profile
+```
+
+<image src="./public/img/getuserprofile.png" alt="GetProfile">
+
+- Delete user :
+
+Only super_admin can delete users
+
+<image src="./public/img/deleteuser.png" alt="DeleteUser">
+
+
+3. Games:
+
+- Get all games:
+
+Need user logging
+
+```
+localhost:8000/api/games
+```
+
+<image src="./public/img/getallgames.png" alt="GetAllGames">
+
+- Post game:
+
+Only super_admin can post game
+
+```
+localhost:8000/api/games
+```
+
+<image src="./public/img/postgame.png" alt="PostGame">
+
+- Put game:
+
+Only super_admin can update game
+
+```
+localhost:8000/api/games/{id}
+```
+
+<image src="./public/img/putgame.png" alt="PutGame">
+
+- Delete game:
+
+Only super_admin can delete game
+
+```
+localhost:8000/api/games/{id}
+```
+
+<image src="./public/img/deletegame.png" alt="DeleteGame">
+
+
+4. Rooms:
+
+- Get all rooms:
+
+Need user logging
+
+```
+localhost:8000/api/rooms
+```
+
+<image src="./public/img/getallrooms.png" alt="GetAllRooms">
+
+- Post room:
+
+Need user logging
+
+```
+localhost:8000/api/rooms
+```
+
+<image src="./public/img/postroom.png" alt="PostRoom">
+
+- Put room:
+
+Need user logging
+
+```
+localhost:8000/api/rooms/{id}
+```
+
+<image src="./public/img/putroom.png" alt="">
+
+- Delete room:
+
+Need user logging
+
+```
+localhost:8000/api/rooms/{id}
+```
+
+<image src="./public/img/deleteroom.png" alt="DeleteRoom">
+
+
+5. Messages:
+
+- Get all room messages: 
+
+Need user logging
+
+<image src="./public/img/getallroommessages.png" alt="GetAllRoomMessages">
+
+- Get all my messages:
+
+Need user logging
+
+<image src="./public/img/getallmymessages.png" alt="GetAllMyMessages">
+
+- Post message:
+
+Need user logging
+
+<image src="./public/img/postmessages.png" alt="PostMessage">
+
+- Put message:
+
+Need user logging
+
+<image src="./public/img/putmessages.png" alt="PutMessage">
+
+- Delete message:
+
+Need user logging
+
+<image src="./public/img/deletemessage.png" alt="DeleteMessage">
+
+
+6. User-Room:
+
+- Get user-room:
+
+<image src="./public/img/getuserrooms.png" alt="GetUserRoom">
+
+- Post user-room:
+
+Need user logging
+
+<image src="./public/img/postuserroom.png" alt="PostUserRoom">
+
+- Delete user-room: 
+
+<image src="./public/img/deleteuserroom.png" alt="DeleteUserRoom">
+
+---
+
+## Authors :wave:
+
+<p align="center">
+  <img src="./public/img/team_Readme.gif" alt="Demostración de funcionalidad">
+</p>
+
+  |<img src="https://github.com/SergioTorresGarcia.png" width="60px;"/>|<img src="https://github.com/MartaGBayona.png" width="60px;"/>|<img src="https://github.com/CariblaGIT.png" width="60px;"/>|<img src="https://github.com/jluisferrer.png" width="60px;"/>|
+  |------------|------------|------------|------------|
+  |<a href="https://github.com/SergioTorresGarcia">Sergio Torres</a>|<a href="https://github.com/MartaGBayona">Marta Gimeno</a>|<a href="https://github.com/CariblaGIT">Carlos Ibañez</a>|<a href="https://github.com/jluisferrer">Jose Ferrer</a>|
+
+---
+
+<div align="center">
+<a href="#table-of-contents-file_folder">🔼 Back to top 🔼</a>
+</div>
