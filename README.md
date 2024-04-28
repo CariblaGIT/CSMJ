@@ -60,10 +60,22 @@ composer artisan serve
 ```json
 
   _id: 1,
-  name: "",
-  email: "",
+  name: "SuperAdmin",
+  email: "superadmin@superadmin.com",
   password: "admin1234",
   role: "super_admin"
+
+```
+
+- User:
+
+```json
+
+  _id: 2,
+  name: "User",
+  email: "user@user.com",
+  password: "123456",
+  role: "user"
 
 ```
 
