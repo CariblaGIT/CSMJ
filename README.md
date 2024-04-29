@@ -34,6 +34,9 @@ Welcome to GameLobby, the ultimate hub for gamers to unite and play! 🎮 Dive i
 
 ## Project :open_book:
 
+<div align="center">
+  <image src="./public/img/diagrama.png" alt="diagrama">
+</div>
 
 ### 1 - Local Installation:
 
